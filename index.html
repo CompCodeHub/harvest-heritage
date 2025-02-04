@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Discover Harvest Heritage's premium collection of authentic Indian spices. Our carefully sourced and traditionally processed spices bring the true essence of Indian cuisine to your kitchen."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content="Astro v4.16.18" />
+    <title>
+      Harvest Heritage - Premium Indian Spices | Traditional Flavors for Modern
+      Cooking
+    </title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="keywords"
+      content="Indian spices, organic spices, premium spices, traditional spices, Harvest Heritage"
+    />
+    <meta
+      property="og:title"
+      content="Harvest Heritage - Premium Indian Spices | Traditional Flavors for Modern Cooking"
+    />
+    <meta
+      property="og:description"
+      content="Discover Harvest Heritage's premium collection of authentic Indian spices. Our carefully sourced and traditionally processed spices bring the true essence of Indian cuisine to your kitchen."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      main {
+        padding-top: 80px;
+      }
+      :root {
+        --primary: #8b4513;
+        --secondary: #d2691e;
+        --accent: #ffd700;
+        --text: #333333;
+        --background: #fff8f0;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: Poppins, sans-serif;
+        background: var(--background);
+        color: var(--text);
+        scroll-behavior: smooth;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: Playfair Display, serif;
+        color: var(--primary);
+      }
+      .header[data-astro-cid-j7pv25f6] {
+        background: linear-gradient(#000000b3, #000000b3),
+          url(https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2070)
+            center/cover;
+        min-height: 100vh;
+        color: #fff;
+      }
+      .nav[data-astro-cid-j7pv25f6] {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        position: fixed;
+        width: 100%;
+        background: #000c;
+        z-index: 1000;
+      }
+      .logo[data-astro-cid-j7pv25f6] {
+        font-family: Playfair Display, serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      .nav-links[data-astro-cid-j7pv25f6] a[data-astro-cid-j7pv25f6] {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 2rem;
+        transition: color 0.3s ease;
+      }
+      .nav-links[data-astro-cid-j7pv25f6] a[data-astro-cid-j7pv25f6]:hover {
+        color: var(--accent);
+      }
+      .hero[data-astro-cid-j7pv25f6] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        padding: 0 1rem;
+      }
+      .hero[data-astro-cid-j7pv25f6] h1[data-astro-cid-j7pv25f6] {
+        font-size: 3.5rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      .hero[data-astro-cid-j7pv25f6] p[data-astro-cid-j7pv25f6] {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .cta-button[data-astro-cid-j7pv25f6] {
+        background-color: var(--accent);
+        color: var(--primary);
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.3s ease;
+      }
+      .cta-button[data-astro-cid-j7pv25f6]:hover {
+        transform: translateY(-3px);
+      }
+      .section[data-astro-cid-j7pv25f6] {
+        padding: 5rem 1rem;
+      }
+      .container[data-astro-cid-j7pv25f6] {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .section[data-astro-cid-j7pv25f6] h2[data-astro-cid-j7pv25f6] {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      .featured[data-astro-cid-j7pv25f6] {
+        background-color: #fff;
+      }
+      .featured-grid[data-astro-cid-j7pv25f6] {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem 0;
+      }
+      .featured-card[data-astro-cid-j7pv25f6] {
+        background: var(--background);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px #0000001a;
+        transition: transform 0.3s ease;
+      }
+      .featured-card[data-astro-cid-j7pv25f6]:hover {
+        transform: translateY(-5px);
+      }
+      .featured-image[data-astro-cid-j7pv25f6] {
+        height: 200px;
+        overflow: hidden;
+      }
+      .featured-image[data-astro-cid-j7pv25f6] img[data-astro-cid-j7pv25f6] {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      .featured-card[data-astro-cid-j7pv25f6]:hover
+        .featured-image[data-astro-cid-j7pv25f6]
+        img[data-astro-cid-j7pv25f6] {
+        transform: scale(1.1);
+      }
+      .featured-content[data-astro-cid-j7pv25f6] {
+        padding: 1.5rem;
+      }
+      .featured-content[data-astro-cid-j7pv25f6] h3[data-astro-cid-j7pv25f6] {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary);
+      }
+      .featured-content[data-astro-cid-j7pv25f6] p[data-astro-cid-j7pv25f6] {
+        color: var(--text);
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+      .features[data-astro-cid-j7pv25f6] {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .features[data-astro-cid-j7pv25f6] li[data-astro-cid-j7pv25f6] {
+        background: var(--primary);
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+      .contact[data-astro-cid-j7pv25f6] {
+        background-color: #fff;
+      }
+      .contact-content[data-astro-cid-j7pv25f6] {
+        text-align: center;
+      }
+      .footer[data-astro-cid-j7pv25f6] {
+        background: var(--primary);
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .nav[data-astro-cid-j7pv25f6] {
+          flex-direction: column;
+          padding: 1rem;
+        }
+        .nav-links[data-astro-cid-j7pv25f6] {
+          margin-top: 1rem;
+        }
+        .nav-links[data-astro-cid-j7pv25f6] a[data-astro-cid-j7pv25f6] {
+          margin: 0 1rem;
+          font-size: 0.9rem;
+        }
+        .hero[data-astro-cid-j7pv25f6] h1[data-astro-cid-j7pv25f6] {
+          font-size: 2.5rem;
+        }
+        .section[data-astro-cid-j7pv25f6] {
+          padding: 3rem 1rem;
+        }
+        .featured-grid[data-astro-cid-j7pv25f6] {
+          grid-template-columns: 1fr;
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" data-astro-cid-j7pv25f6>
+      <nav class="nav" data-astro-cid-j7pv25f6>
+        <div class="logo" data-astro-cid-j7pv25f6>Harvest Heritage</div>
+        <div class="nav-links" data-astro-cid-j7pv25f6>
+          <a href="#hero" data-astro-cid-j7pv25f6>Home</a>
+          <a href="#about" data-astro-cid-j7pv25f6>About</a>
+          <a href="menu/index.html" data-astro-cid-j7pv25f6>Menu</a>
+          <a href="#contact" data-astro-cid-j7pv25f6>Contact</a>
+        </div>
+      </nav>
+      <div id="hero" class="hero" data-astro-cid-j7pv25f6>
+        <h1 data-astro-cid-j7pv25f6>Authentic Indian Spices</h1>
+        <p data-astro-cid-j7pv25f6>
+          Bringing centuries of tradition to your modern kitchen
+        </p>
+        <a href="menu/index.html" class="cta-button" data-astro-cid-j7pv25f6
+          >View Our Menu</a
+        >
+      </div>
+    </header>
+    <main data-astro-cid-j7pv25f6>
+      <section id="about" class="section" data-astro-cid-j7pv25f6>
+        <div class="container" data-astro-cid-j7pv25f6>
+          <h2 data-astro-cid-j7pv25f6>Our Heritage</h2>
+          <p data-astro-cid-j7pv25f6>
+            At Harvest Heritage, we carefully source and process the finest
+            Indian spices, preserving traditional methods passed down through
+            generations. Each spice in our collection tells a story of culture,
+            tradition, and authentic flavors.
+          </p>
+        </div>
+      </section>
+      <section id="featured" class="section featured" data-astro-cid-j7pv25f6>
+        <div class="container" data-astro-cid-j7pv25f6>
+          <h2 data-astro-cid-j7pv25f6>Featured Spice Blends</h2>
+          <div class="featured-grid" data-astro-cid-j7pv25f6>
+            <div class="featured-card" data-astro-cid-j7pv25f6>
+              <div class="featured-image" data-astro-cid-j7pv25f6>
+                <img
+                  src="https://th.bing.com/th/id/OIP.lyFzUGRDZgPZysUQxVrDlwHaFh?w=232&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt="Goda Masala"
+                  data-astro-cid-j7pv25f6
+                />
+              </div>
+              <div class="featured-content" data-astro-cid-j7pv25f6>
+                <h3 data-astro-cid-j7pv25f6>Goda Masala</h3>
+                <p data-astro-cid-j7pv25f6>
+                  A traditional Maharashtrian spice blend featuring roasted
+                  coconut, sesame seeds, and aromatic spices. Perfect for
+                  vegetable curries and lentil dishes.
+                </p>
+                <ul class="features" data-astro-cid-j7pv25f6>
+                  <li data-astro-cid-j7pv25f6>Chemical-free</li>
+                  <li data-astro-cid-j7pv25f6>Traditional recipe</li>
+                  <li data-astro-cid-j7pv25f6>Rich aroma</li>
+                </ul>
+              </div>
+            </div>
+            <div class="featured-card" data-astro-cid-j7pv25f6>
+              <div class="featured-image" data-astro-cid-j7pv25f6>
+                <img
+                  src="https://th.bing.com/th/id/OIP.hyFb4D-EUc4Kde5DagBa3AHaE0?w=182&h=118&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt="Kolhapuri Garam Masala"
+                  data-astro-cid-j7pv25f6
+                />
+              </div>
+              <div class="featured-content" data-astro-cid-j7pv25f6>
+                <h3 data-astro-cid-j7pv25f6>Kolhapuri Garam Masala</h3>
+                <p data-astro-cid-j7pv25f6>
+                  Our signature blend featuring hand-picked spices, perfectly
+                  roasted and ground to create the authentic Kolhapuri flavor
+                  profile.
+                </p>
+                <ul class="features" data-astro-cid-j7pv25f6>
+                  <li data-astro-cid-j7pv25f6>Authentic taste</li>
+                  <li data-astro-cid-j7pv25f6>Hand-ground</li>
+                  <li data-astro-cid-j7pv25f6>Premium quality</li>
+                </ul>
+              </div>
+            </div>
+            <div class="featured-card" data-astro-cid-j7pv25f6>
+              <div class="featured-image" data-astro-cid-j7pv25f6>
+                <img
+                  src="https://th.bing.com/th/id/R.a9a27c0904f2c7b5ba12fd4bbf5b1fef?rik=LyZZuReB1KXwRg&riu=http%3a%2f%2fkrampusbotanicals.com%2fwp-content%2fuploads%2f2017%2f03%2fTurmeric2.jpg&ehk=Yd43cbzSAY624lc08wrG2EVC8Bp4xWeK8nzotOzQH68%3d&risl=&pid=ImgRaw&r=0"
+                  alt="Organic Haldi Powder"
+                  data-astro-cid-j7pv25f6
+                />
+              </div>
+              <div class="featured-content" data-astro-cid-j7pv25f6>
+                <h3 data-astro-cid-j7pv25f6>Organic Haldi Powder</h3>
+                <p data-astro-cid-j7pv25f6>
+                  Pure, organic turmeric powder with high curcumin content.
+                  Sourced from the finest turmeric roots for maximum flavor and
+                  health benefits.
+                </p>
+                <ul class="features" data-astro-cid-j7pv25f6>
+                  <li data-astro-cid-j7pv25f6>100% Organic</li>
+                  <li data-astro-cid-j7pv25f6>High curcumin</li>
+                  <li data-astro-cid-j7pv25f6>Fresh ground</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section contact" data-astro-cid-j7pv25f6>
+        <div class="container" data-astro-cid-j7pv25f6>
+          <h2 data-astro-cid-j7pv25f6>Connect With Us</h2>
+          <div class="contact-content" data-astro-cid-j7pv25f6>
+            <div class="contact-info" data-astro-cid-j7pv25f6>
+              <!-- <p data-astro-cid-j7pv25f6>Email: info@harvestheritage.com</p> -->
+              <p data-astro-cid-j7pv25f6>WhatsApp: +91 9673110812</p>
+              <!-- <p data-astro-cid-j7pv25f6>
+                Address: 123 Spice Market Street<br
+                  data-astro-cid-j7pv25f6
+                />Flavor Town, SP 12345
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-astro-cid-j7pv25f6>
+      <div class="container" data-astro-cid-j7pv25f6>
+        <p data-astro-cid-j7pv25f6>
+          &copy; 2025 Harvest Heritage. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
